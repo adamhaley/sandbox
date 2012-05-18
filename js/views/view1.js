@@ -3,29 +3,24 @@ define([
   'order!jQueryUI',
   'Underscore',
   'Backbone',
-  'collections/testCollection',
-  'text!templates/view1.tpl',
-], function($, ui,  _, Backbone, testCollection, view1){
+  'text!templates/models.tpl',
+], function($, ui,  _, Backbone, template){
 
   var View1 = Backbone.View.extend({
     initialize: function(){
 		_.bindAll(this, "render");
-		var collection = this.collection;
-		collection.bind('reset',this.render);
+		var collection = this.options.collection;
+		collection.bind('add',this.render);
 	},
 	el: $('#view1'),
-	collection: new testCollection,
 	render: function(options){
-		console.log('in render..');
+		console.log('rendering view1...');
+		/*
 		var m = '{"measures":' + JSON.stringify(this.collection) + '}';
-		var out = _.template(view1, JSON.parse(m));
+		var out = _.template(template, JSON.parse(m));
 		
 		this.addEvents();
-	},
-	addEvents: function(){	
-	   	var el = this.el;
-	});
-		
+		*/
 	}
   });
   return View1;
