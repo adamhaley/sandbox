@@ -1,0 +1,6 @@
+#container{width:960px;height:1000px;margin-left:auto;margin-right:auto;margin-top:20px;}
+#map{position:relative;width:960px;height:500px;border:1px solid #c3c6c5;}
+#timeline{position:relative;width:100%;height:98px;margin-top:10px;background-color:#c3c6c5;background-image:url(images/timeline-bg.png);background-repeat:repeat-x;overflow:hidden;}
+#timeline-events{list-style-type:none;height:100%;width:90%;margin-left:auto;margin-right:auto;padding:0;}#timeline-events div{float:left;}
+#timeline-events #timeline-trip{position:relative;height:100%;width:60%;margin:0;padding:0;left:0px;background-image:url(images/timeline-trip-bg.png);}#timeline-events #timeline-trip .start{position:absolute;z-index:90;height:100%;width:100px;left:-20px;background-image:url(images/timeline-start.png);background-repeat:no-repeat;background-position:0 20px;}
+#timeline-events #timeline-trip .current{position:absolute;z-index:100;height:100%;width:134px;right:-100px;background-image:url(images/timeline-current.png);background-position:0 1px;}

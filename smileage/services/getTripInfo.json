@@ -1,3 +1,72 @@
 {
-	"a" : "b"
+	"tripName" : "Adam's Trip",
+	"isComplete" : false,
+	"picasaAlbumID" : 123456789,
+	"stats": {
+		"distance": 5,
+		"duration": 3,
+		"smileagePoints": 34765,
+		"avgSpeedMph": 45,
+		"currentTemp": 89,
+		"currentWeatherType": 3
+		},
+	"user": {
+		"id": "adamhaley",
+		"firstName": "Adam",
+		"lastName": "Haley"
+	},
+	"vehicle": {
+		"make": "VW",
+		"model": "Jetta",
+		"year": "2012",
+		"color": "Metallic Grey"
+	},
+	"drives": [
+		{
+			"id":123,
+			"startTime": 1363826836,
+			"endTime":"",
+			"polyLine":"",
+			"stickers": [
+				{
+					"id": 23,
+					"type": 1,
+					"relatedItemId": 23,
+					"relatedItemType": "punch",
+					"title": "A Title",
+					"message": "lorem",
+					"snapshot" : {
+						"lat": 1,
+						"lon": 1,
+						"timestamp": ""
+					}
+				},
+				{
+					"id": 24,
+					"type": 1,
+					"relatedItemId": 23,
+					"relatedItemType": "punch",
+					"title": "A Title",
+					"message": "lorem",
+					"snapshot" : {
+						"lat": 1,
+						"lon": 1,
+						"timestamp": ""
+					}
+
+				}
+			],
+			"punches": [
+				{	
+					"id": 10,
+					"snapshot": {
+						"lat": 1,
+						"lon": 1,
+						"timestamp": ""
+					}
+				}	
+			]
+		}
+
+	]
 }
